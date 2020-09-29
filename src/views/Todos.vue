@@ -36,6 +36,9 @@ export default {
       filter: 'all'
     }
   },
+  created(){
+    console.log("CREATED Todos ", this.data)
+  },
   mounted() {
     fetch('https://jsonplaceholder.typicode.com/todos?_limit=5')
         .then(response => response.json())
